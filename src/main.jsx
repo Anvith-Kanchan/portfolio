@@ -26,7 +26,6 @@ function Header(){
     <button className="menu-toggle" aria-expanded={open} aria-label="Toggle navigation" onClick={()=>setOpen(!open)}>{open?'Close':'Menu'}</button>
     <nav className={open?'nav open':'nav'} aria-label="Main navigation">
       {links.map(([label,href])=><a key={href} href={href} onClick={()=>setOpen(false)}>{label}</a>)}
-      <a className="nav-resume" href="/portfolio/Anvith-Kanchan-Resume.pdf" target="_blank" rel="noreferrer">Resume <Arrow diagonal/></a>
     </nav>
   </header>;
 }
